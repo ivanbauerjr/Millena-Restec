@@ -1,0 +1,33 @@
+﻿Avaliação Final
+Nesta avaliação final, você deverá construir um dashboard de dados públicos, utilizando preferencialmente a mesma base identificada, descrita e analisada nas Atividades 2 e 3. A proposta é que você aproveite o conhecimento já construído sobre essa base — sua origem, seus atributos, sua periodicidade, seus limites, seus riscos e suas possibilidades de uso — para transformá-la em um painel visual simples, objetivo e útil para apoiar uma tomada de decisão no setor público.
+O dashboard poderá ser desenvolvido em Power BI ou em outra solução de visualização de dados, como Data Studio, Qlik Sense, Tableau ou ferramenta equivalente. O importante é que o produto final seja efetivamente um dashboard, isto é, um painel visual organizado, com indicadores, filtros e representações gráficas capazes de comunicar informações relevantes sobre uma base pública de dados.
+Para realizar a atividade, você deverá acessar a base pública escolhida, fazer o download ou a conexão com os dados, importar os dados na ferramenta selecionada e realizar os tratamentos necessários. Esses tratamentos podem incluir ajuste de tipos de dados, padronização de nomes de campos, exclusão de colunas desnecessárias, tratamento de valores ausentes, organização de categorias, criação de indicadores, filtros ou agrupamentos. O objetivo não é construir um painel complexo, mas demonstrar que você consegue transformar uma base pública em uma visualização compreensível, útil e orientada a uma pergunta de gestão pública.
+O dashboard deverá conter pelo menos uma página, na qual deverão constar: um título claro, a indicação da fonte dos dados, pelo menos quatro visuais, pelo menos um filtro ou segmentação de dados e uma organização visual que facilite a leitura por pessoas que não sejam especialistas em análise de dados. Você poderá utilizar, por exemplo, cartões de indicadores, gráficos de barras ou colunas, gráficos de linhas, mapas, matrizes, tabelas, gráficos de rosca, gráficos de área, séries temporais, mapas geográficos ou outros recursos disponíveis na ferramenta escolhida, desde que eles sejam adequados ao tipo de informação analisada.
+Além da construção técnica, o dashboard deverá comunicar bem. Use títulos objetivos, nomes compreensíveis para os indicadores, filtros intuitivos e uma linguagem simples. Lembre-se de que um painel de dados públicos deve ajudar o usuário a entender rapidamente o que está sendo mostrado, qual problema está sendo acompanhado e que tipo de decisão pode ser apoiada por aqueles dados.
+Você deverá publicar dashboard na internet, de modo que ele possa ser acessado para avaliação. Como a atividade deve utilizar apenas dados públicos, a publicação poderá ser feita de forma pública, desde que não haja exposição de dados pessoais, dados sensíveis, informações sigilosas ou qualquer conteúdo que permita identificação indevida de pessoas. No caso do Power BI, a Microsoft informa que o recurso “Publicar na Web” permite compartilhar conteúdo interativo em sites, blogs, e-mails ou mídias sociais, mas também alerta que o conteúdo publicado pode ser visualizado publicamente; portanto, confirme previamente que os dados utilizados são públicos e adequados para divulgação. 
+A entrega deverá ser feita por meio um arquivo em formato PDF, que deverá conter o link de acesso ao dashboard publicado e um breve comentário, em que você deverá explicar qual base foi utilizada, quais tratamentos principais foram realizados, quais indicadores foram construídos e como o dashboard pode apoiar uma decisão pública.
+Exemplo resumido do que se espera:
+Um estudante que utilizou o CNES nas Atividades 2 e 3 poderia construir um dashboard com o título “Oferta de serviços de saúde por município do Paraná”. Na ferramenta escolhida, ele poderia tratar a base para padronizar nomes de municípios, filtrar estabelecimentos ativos, organizar categorias de tipo de unidade e selecionar os campos mais relevantes para análise. Na página do dashboard, poderia inserir cartões com o total de estabelecimentos e o total de leitos, um gráfico de barras com estabelecimentos por município, um mapa com a distribuição territorial das unidades, uma matriz com tipos de estabelecimento e um filtro por município ou tipo de gestão. Esse dashboard poderia apoiar decisões sobre distribuição territorial da rede, identificação de vazios assistenciais, priorização de investimentos e monitoramento da capacidade instalada, desde que fossem reconhecidos seus limites, como eventual defasagem cadastral ou necessidade de cruzamento com dados populacionais.
+
+
+Critério
+	 Pontuação 
+	 Utilização de uma base pública pertinente, preferencialmente a mesma trabalhada nas Atividades 2 e 3, com indicação clara da fonte dos dados
+	4 pontos
+	 Importação, organização e tratamento adequado da base na ferramenta escolhida
+	4 pontos
+	 Construção de dashboard com pelo menos uma página, título, fonte dos dados, quatro visuais e um filtro ou segmentação
+	8 pontos
+	 Coerência dos indicadores escolhidos e relação com uma pergunta ou necessidade concreta de tomada de decisão pública
+	6 pontos
+	 Qualidade da comunicação visual, com organização clara, linguagem simples, títulos compreensíveis e leitura intuitiva do dashboard
+	5 pontos
+	 Publicação ou disponibilização do dashboard na internet, com observância dos cuidados com dados públicos, LGPD, sigilo e não exposição de dados pessoais ou sensíveis
+	5 pontos
+	 Comentário final explicando a base utilizada, os tratamentos realizados, os indicadores construídos e como o dashboard pode apoiar uma decisão pública
+	6 pontos
+	 Clareza geral, organização da entrega e envio correto do link
+	2 pontos
+
+
+
