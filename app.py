@@ -249,6 +249,15 @@ def carregar_dados() -> pd.DataFrame:
         df = df_raw[["CNPJ", "Razao_Social", "Termo_Enquadramento", "Num_DIOE", "Data_DIOE"]].copy()
         df.dropna(subset=["CNPJ"], inplace=True)
         df = processar_dados(df)
+
+        # Valida se os dados raspados têm datas úteis (>50% válidas)
+        pct_datas_validas = df["Data_DIOE"].notna().mean()
+        if pct_datas_validas < 0.5:
+            raise ValueError(
+                f"Datas inválidas ou ausentes na tabela raspada "
+                f"({pct_datas_validas:.0%} válidas). Usando dataset representativo."
+            )
+
         return df
 
     except Exception as e:
