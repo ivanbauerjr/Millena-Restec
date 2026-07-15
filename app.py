@@ -684,12 +684,12 @@ st.markdown('<div class="section-title">📋 Relação de Contribuintes Enquadra
 
 if not df.empty:
     df_exibir = df[[
-        "CNPJ", "Razao_Social", "Termo_Enquadramento",
+        "CNPJ", "Termo_Enquadramento",
         "Num_DIOE", "Data_DIOE", "Meses_Enquadrado", "Delegacia", "Grupo_Economico",
     ]].copy()
     df_exibir["Data_DIOE"] = df_exibir["Data_DIOE"].dt.strftime("%d/%m/%Y").fillna("—")
     df_exibir.columns = [
-        "CNPJ", "Razão Social", "Termo de Enquadramento",
+        "CNPJ", "Termo de Enquadramento",
         "Nº DIOE", "Data DIOE", "TME (meses)", "Delegacia Regional", "Perfil do Contribuinte",
     ]
     st.dataframe(
