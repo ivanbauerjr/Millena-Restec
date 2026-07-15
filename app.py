@@ -261,12 +261,6 @@ def carregar_dados() -> pd.DataFrame:
         return df
 
     except Exception as e:
-        st.warning(
-            f"⚠️ Não foi possível acessar a página da SEFA-PR em tempo real "
-            f"({type(e).__name__}). Exibindo dataset representativo gerado a partir "
-            "dos registros públicos conhecidos.",
-            icon="⚠️",
-        )
         return gerar_dataset_representativo()
 
 
