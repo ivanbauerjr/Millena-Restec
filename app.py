@@ -336,14 +336,26 @@ def gerar_dataset_representativo() -> pd.DataFrame:
     ]
 
     n = len(razoes)
-    # CNPJs fictícios mas plausíveis
+    # CNPJs fictícios mas plausíveis (injetando grupos econômicos)
     prefixos = ["76", "77", "78", "79", "80", "81", "82", "83"]
     cnpjs = []
+    raizes = []
     for i in range(n):
         pref = rng.choice(prefixos)
         mid = str(rng.integers(100000, 999999))
+        raizes.append(f"{pref}{mid}")
+        
+    # Força a criação de grupos copiando algumas raízes
+    if n > 10:
+        raizes[1] = raizes[0]  # Grupo de 2 empresas
+        raizes[3] = raizes[2]  # Grupo de 3 empresas
+        raizes[4] = raizes[2]
+        raizes[7] = raizes[6]  # Grupo de 2 empresas
+
+    for i in range(n):
+        raiz = raizes[i]
         suf = str(rng.integers(1000, 9999))
-        cnpjs.append(f"{pref}.{mid[:3]}.{mid[3:]}/{suf}-{rng.integers(10,99)}")
+        cnpjs.append(f"{raiz[:2]}.{raiz[2:5]}.{raiz[5:]}/{suf}-{rng.integers(10,99)}")
 
     # Datas entre 2019 e 2024
     base_date = datetime.date(2019, 1, 1)
